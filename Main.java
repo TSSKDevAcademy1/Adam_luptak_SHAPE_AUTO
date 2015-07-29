@@ -36,9 +36,8 @@ public class Main {
 				System.out.println("Zadajte plny alebo prazdny obdlznik TRUE || FALSE");
 				typ = Boolean.valueOf(readLine());
 				break;
-			default:
-				System.out.println("zadalite ste neplatnu volbu");
-			}
+				default: dnu = "end"; break;
+ 			}
 
 			switch (dnu) {
 			case "1":
@@ -63,10 +62,20 @@ public class Main {
 				Rectangle rt22 = new Rectangle(1, 1, 'o', width ,  height, false);
 				System.out.println(rt22.toString(typ));
 				break;
+			default: dnu = "end"; break;
 			}
 
 		} while (dnu.equals("end") == false);
 
+		
+		if(dnu == "end")
+		{
+			
+			System.out.println("cav KONIEC");
+			System.exit(0);
+			System.out.println(" sdsddssssssssssssssss");
+		}
+		
 		System.out.println(" ");
 		//
 		Line line = new Line(10, 10, 't', 10, true);// vytvori novu instanciu
