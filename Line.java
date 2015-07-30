@@ -139,11 +139,13 @@ public class Line extends Shape {
 				string += getFill();
 			} else {
 
-				if (field == true) {
-					string += getFill();
-				} else {
-					string += " ";
-				}
+//				if (field == true) {
+//					string += getFill();
+//				} else {/// cez ?
+//					string += " ";
+//				}
+				
+				string += field ? getFill() : " ";
 
 			}
 
